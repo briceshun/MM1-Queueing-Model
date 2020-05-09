@@ -5,11 +5,13 @@ It is not uncommon to hear people complaining about being stuck in a traffic jam
 One of the major causes behind the automobile conjestion are the ramp signals which control the flow of traffic merging onto 
 the motorways.
 
-We will use the traffic flow on the <i>H1 Greenlane Interchange 43 Northbound</i> as an example and apply the queueing theory to analyse the system.
+The traffic flow on the ramp leading to the southern motorway northbound was used as an example to apply the queueing theory and 
+analyse the system.
 Screenshots were taken for 5 minutes from 07:55am to 08:00am on Friday 18th May 2018 when the ramp signal was on.
+![alt text](https://github.com/briceshun/MM1-Queueing-Model/blob/master/Pictures/Screenshots.PNG?raw=true)
 
 ### Outcomes
-Markov/Markov/1 : FIFO/∞/Infinite
+Model Definition = Markov/Markov/1 : FIFO/∞/Infinite
 
 The ramp's mean inter-arrival and service time was 4.35 seconds and 4.55 seconds respectively.<br>
 Based on the data collected and analysis, we can conclude that the ramp's limited capacity does not allow a smooth traffic flow 
@@ -34,6 +36,8 @@ Conjestion arises when the vehicles arrive faster than the ramp signal can let t
 * <b>Service Utilisation Factor (ρ)</b>: mean arrivals (capacity demand) per mean merging (available capacity).
 
 In our case, the mean arrival rate of vehicles on the Ramp exceeds its service time, which leads to an exponentially increasing queue size.
+
+![alt text](https://github.com/briceshun/MM1-Queueing-Model/blob/master/Pictures/System.PNG?raw=true)
 
 ## M/M/1 Queueing Model
 The Kendall notation (A/B/N) will be used to define the model. <br>
@@ -85,11 +89,12 @@ where the system state is independent of the initial state as well as the elapse
 As it can be seen from Table 4, increasing the number of lanes significantly decreases the service utilisation rate. 
 An additional lane would suffice to produce a steady state system. 
 Although more lanes would improve the rate even more, it is not cost efficient to build all these lanes; 
-too many lanes might just be a step backwards as the rate at which the vehicles will access the motorway will be the same as without a signalled ramp 
-which defeats its purpose. 
+too many lanes might just be a step backwards as the rate at which the vehicles will access the motorway will be the same as without a signalled ramp which defeats its purpose. 
 Hence, 1 additional lane (Option 1) is the most cost-efficient solution to improve the flow of vehicles at the ramp to eliminate 
 ever-growing queues and waiting times.
 
+![alt text](https://github.com/briceshun/MM1-Queueing-Model/blob/master/Pictures/Simulation.png?raw=true)
+
 Simulation shows significant improvement in traffic flow on ramp. 
-The proposed solution’s queue clearly does not explode – it has reached a steady state system has become independent of initial state. <br>
-Queue size stabilises at 3 vehicles.
+The proposed solution’s queue clearly does not explode and it has reached a steady state system has become independent of initial state.
+Queue size stabilised at 3 vehicles.
