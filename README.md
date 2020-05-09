@@ -53,7 +53,8 @@ and the next merging will be within an average of 1/μ=4.55 seconds.
 ### Assumptions
 * Calling population infinite
 * Service and Arrival are exponentially distributed. Arrival follows <i>Poisson Process</i>.
-* The system follows a <i>Single Queue Configuration</i>. Single FIFO queue of infinite length configuration.
+* The system follows a <i>Single Queue Configuration</i>. 
+* Single <i>First-In-First-Out</i> queue of infinite length configuration.
 * No balking, reneging, or retrial.
 * Single server located at end of queue.
 * All vehicles in the 2 lanes considered as 1 queue.
@@ -75,12 +76,18 @@ This will increase the expected service rate and consequently reduce the service
 This will lead to λ<μ and ρ<1 thus meeting the <i>Steady State Condition</i> 
 where the system state is independent of the initial state as well as the elapsed time.
 
+| Option   | Lanes | Mean Arrival Rate (λ) | Mean Service Rate (μ)  | Service Utilisation Rate (ρ) |
+| -------- | ----- | --------------------- | ---------------------- | ---------------------------- |
+| Current  | 2     | 0.23                  | 0.11 × 2 = 0.22        | 0.23 ⁄ 0.22 = 1.05           |
+| Option 1 | 3     | 0.23                  | 0.11 × 3 = 0.33        | 0.23 ⁄ 0.33 = 0.70           |
+| Option 2 | 4     | 0.23                  | 0.11 × 4 = 0.44        | 0.23 ⁄ 0.44 = 0.52           |
+
 As it can be seen from Table 4, increasing the number of lanes significantly decreases the service utilisation rate. 
 An additional lane would suffice to produce a steady state system. 
 Although more lanes would improve the rate even more, it is not cost efficient to build all these lanes; 
 too many lanes might just be a step backwards as the rate at which the vehicles will access the motorway will be the same as without a signalled ramp 
 which defeats its purpose. 
-Hence, 1 additional lane (Option 1) is the most cost-efficient solution to improve the flow of vehicles at the Ramp to eliminate 
+Hence, 1 additional lane (Option 1) is the most cost-efficient solution to improve the flow of vehicles at the ramp to eliminate 
 ever-growing queues and waiting times.
 
 Simulation shows significant improvement in traffic flow on ramp. 
