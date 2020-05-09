@@ -21,7 +21,7 @@ Simulation showed that the optimal solution would be to add an additional lane t
 This will decrease the waiting time on the ramp and produce a steady state system with a maximum of 3 vehicles waiting at all times.
 
 ## Application of Queueing Theory
-The Queuing Theory is a mathematical study of queues which may be used to create predictive models of queue lengths and 
+The Queueing Theory is a mathematical study of queues which may be used to create predictive models of queue lengths and 
 waiting times in an attempt to streamline these processes. 
 Conjestion arises when the vehicles arrive faster than the ramp signal can let then merge with the motorway. 
 
@@ -96,5 +96,5 @@ ever-growing queues and waiting times.
 ![alt text](https://github.com/briceshun/MM1-Queueing-Model/blob/master/Pictures/Simulation.png?raw=true)
 
 Simulation shows significant improvement in traffic flow on ramp. 
-The proposed solution’s queue clearly does not explode and it has reached a steady state system has become independent of initial state.
+The proposed solution’s queue clearly does not explode and reached a steady state system, independent of initial state.
 Queue size stabilised at 3 vehicles.
