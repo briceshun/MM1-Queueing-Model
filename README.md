@@ -29,30 +29,30 @@ Conjestion arises when the vehicles arrive faster than the ramp signal can let t
 * <b>Input Source</b>: the vehicles arriving from various roads onto the ramp. 
 * <b>Calling Population</b>: the vehicles calling population is <i>Infinite Calling Population</i>.
 * <b>Queuing System</b>: the process of queueing up on the ramp and waiting to be able to merge with the motorway.
-* <b>Queuing Configuration & Discipline</b>: how the vehicles proceed across the Ramp and behave in their lanes.
+* <b>Queuing Configuration & Discipline</b>: how the vehicles proceed across the ramp and behave in their lanes.
 * <b>Service Mechanism</b>: the way the vehicles are allowed to merge (how they are served).
 * <b>Mean Arrival Rate (μ)</b>: the mean arrival frequency per second.
 * <b>Mean Service Rate (λ)</b>: the mean merging frequency per second.
 * <b>Service Utilisation Factor (ρ)</b>: mean arrivals (capacity demand) per mean merging (available capacity).
 
-In our case, the mean arrival rate of vehicles on the Ramp exceeds its service time, which leads to an exponentially increasing queue size.
+In our case, the mean arrival rate of vehicles on the ramp exceeds its service time, which leads to an exponentially increasing queue size.
 
 ![alt text](https://github.com/briceshun/MM1-Queueing-Model/blob/master/Pictures/System.PNG?raw=true)
 
 ## M/M/1 Queueing Model
 The Kendall notation (A/B/N) will be used to define the model. <br>
-A is the <i>arrival distribution</i>, <i>B</i> is the Service Distribution</i>, and </i>N</i> is the number of servers.
+A is the <i>Arrival Distribution</i>, <i>B</i> is the <i>Service Distribution</i>, and </i>N</i> is the <i>Number of Servers</i>.
 
 ### Model
 <b>Model definition</b>: Markov/Markov/1
 
 The <i>inter-arrival time </i> and </i>service time</i> follow a memoryless <i>Markovian</i> (exponential) distribution
 The system is independent of the last arrival or service wait-time; 
-This implies that the expected arrival rate λ<sub>n</sub>=λ=0.23 and expected service time s<sub>n</sub>=s=4.55 seconds for all observations. 
+This implies that the expected arrival rate λ<sub>n</sub> = λ = 0.23 and expected service time s<sub>n</sub> = s = 4.55 seconds for all observations. 
 
 This is a special case of the Markov Process; the state alternates between arrival and departure. 
-For any quantity of vehicles in the system, the next arrival will arrive within 1/λ=4.35 seconds; 
-and the next merging will be within an average of 1/μ=4.55 seconds.
+For any quantity of vehicles in the system, the next arrival will arrive within 1/λ = 4.35 seconds; 
+and the next merging will be within an average of 1/μ = 4.55 seconds.
 
 ### Assumptions
 * Calling population infinite
@@ -64,7 +64,7 @@ and the next merging will be within an average of 1/μ=4.55 seconds.
 * All vehicles in the 2 lanes considered as 1 queue.
 
 ### Service Utilisation
-The M/M/1 queue has capacity demand exceeding available capacity (λ > μ); this leads to ρ=1.05. <br>
+The M/M/1 queue has capacity demand exceeding available capacity (λ > μ); this leads to ρ = 1.05. <br>
 It is therefore not in a steady state and will explode since more vehicles are arriving than merging.
 
 ## Results & Implications
@@ -77,7 +77,7 @@ This will create massive traffic jams.
 ## Suggested Solution
 A feasible solution would be to increase the number of lanes on the ramp to increase the number of vehicles served. 
 This will increase the expected service rate and consequently reduce the service time. 
-This will lead to λ<μ and ρ<1 thus meeting the <i>Steady State Condition</i> 
+This will lead to λ < μ and ρ < 1 thus meeting the <i>Steady State Condition</i> 
 where the system state is independent of the initial state as well as the elapsed time.
 
 | Option   | Lanes | Mean Arrival Rate (λ) | Mean Service Rate (μ)  | Service Utilisation Rate (ρ) |
@@ -86,7 +86,7 @@ where the system state is independent of the initial state as well as the elapse
 | Option 1 | 3     | 0.23                  | 0.11 × 3 = 0.33        | 0.23 ⁄ 0.33 = 0.70           |
 | Option 2 | 4     | 0.23                  | 0.11 × 4 = 0.44        | 0.23 ⁄ 0.44 = 0.52           |
 
-As it can be seen from Table 4, increasing the number of lanes significantly decreases the service utilisation rate. 
+Increasing the number of lanes significantly decreases the service utilisation rate. 
 An additional lane would suffice to produce a steady state system. 
 Although more lanes would improve the rate even more, it is not cost efficient to build all these lanes; 
 too many lanes might just be a step backwards as the rate at which the vehicles will access the motorway will be the same as without a signalled ramp which defeats its purpose. 
