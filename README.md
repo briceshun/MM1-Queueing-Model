@@ -51,8 +51,8 @@ The system is independent of the last arrival or service wait-time;
 This implies that the expected arrival rate λ<sub>n</sub> = λ = 0.23 and expected service time s<sub>n</sub> = s = 4.55 seconds for all observations. 
 
 This is a special case of the Markov Process; the state alternates between arrival and departure. 
-For any quantity of vehicles in the system, the next arrival will arrive within 1/λ = 4.35 seconds; 
-and the next merging will be within an average of 1/μ = 4.55 seconds.
+For any quantity of vehicles in the system, the next arrival will arrive within 4.35 seconds; 
+and the next merging will be within an average of 4.55 seconds.
 
 ### Assumptions
 * Calling population infinite
